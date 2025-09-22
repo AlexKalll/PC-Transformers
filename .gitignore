@@ -8,7 +8,7 @@ __pycache__/
 *.db
 *.whl
 pc_transformer_venv/
-data_preprocessing/
+# data_preprocessing/
 
 venv/
 *.egg-info/
