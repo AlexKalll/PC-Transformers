@@ -7,7 +7,7 @@ from Data_preprocessing.config import Config
 
 def prepare_pubmed_full(
     hub_id: str = "casinca/PUBMED_title_abstracts_2019_baseline",
-    text_fields=("abstract", "TITLE_ABSTRACT"),
+    text_fields=("text"),
     train_frac: float = 0.9,
     valid_frac: float = 0.05,
     test_frac: float = 0.05,
@@ -79,3 +79,9 @@ if __name__ == "__main__":
         test_frac=args.test_frac,
         max_records=args.max_records,
     )
+
+# module running example:
+# python -m Data_preprocessing.prepare_pubmed_full --max-records <max rows you want> --train-frac <train frac> --valid-frac <valid frac> --test-frac <test frac> 
+
+# or if you want to use the default values:
+# python -m Data_preprocessing.prepare_pubmed_full
