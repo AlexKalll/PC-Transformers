@@ -37,7 +37,7 @@ def prepare_enhanced_financial_phrasebank() -> None:
             split_to_lines[split] = lines
             print(f"Extracted {len(lines)} rows from '{split}'")
 
-    out_dir = os.path.join(Config.DATA_DIR, "efh")
+    out_dir = os.path.join(Config.DATA_DIR, "efp")
     os.makedirs(out_dir, exist_ok=True)
 
     if "train" in split_to_lines:
